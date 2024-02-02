@@ -233,9 +233,10 @@ void drawRays3D()
         disT = disT*cos(ca); //fisheye fix
 
         float lineH = (mapS * 320) / disT;
-        float lineO = 160 - lineH/2;
         if(lineH > 320)
             lineH = 320;
+        float lineO = 160 - lineH/2;
+        
 
         glLineWidth(8);
         glBegin(GL_LINES);
